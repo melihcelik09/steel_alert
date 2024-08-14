@@ -14,7 +14,7 @@ Steel alert is a UI Kit for Alert or Dilaogs. It comes with 3 types info, error 
 
 ### Warning
 
-![Warning](assets/Warning.png)
+![Warning](assets/warning.png)
 
 ## Getting started
 
