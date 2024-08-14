@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:steel_alert/steel_alert.dart';
+import 'package:steel_alert/src/alerts/steel_alert.dart';
+import 'package:steel_alert/src/constants/steel_alert_type.dart';
+import 'package:steel_alert/src/constants/steel_colors.dart';
+import 'package:steel_alert/src/helpers/theme_extension.dart';
 
-class SteelAlertDialog extends StatelessWidget {
+class SteelAlertWidget extends StatelessWidget {
   final SteelAlertType type;
   final String? title;
   final String? content;
   final String? actionText;
 
-  const SteelAlertDialog({
+  const SteelAlertWidget({
     super.key,
     this.title,
     this.content,
@@ -63,30 +66,4 @@ class SteelAlertDialog extends StatelessWidget {
       ],
     );
   }
-}
-
-enum SteelAlertType {
-  warning(icon: Icons.warning, color: SteelColors.warningColor),
-  error(icon: Icons.local_fire_department, color: SteelColors.errorColor),
-  info(icon: Icons.info, color: SteelColors.infoColor),
-  success(icon: Icons.thumb_up, color: SteelColors.successColor);
-
-  final IconData? icon;
-  final Color? color;
-
-  const SteelAlertType({this.icon, this.color});
-}
-
-extension ThemeExtension on BuildContext {
-  ThemeData get theme => Theme.of(this);
-  TextTheme get textTheme => theme.textTheme;
-}
-
-class SteelColors {
-  static const bgColor = Color(0xffe6e7ee);
-  static const shadowColor = Colors.grey;
-  static const warningColor = Colors.orangeAccent;
-  static const errorColor = Colors.red;
-  static const infoColor = Colors.blue;
-  static const successColor = Colors.green;
 }
