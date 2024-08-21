@@ -1,4 +1,4 @@
-## [0.0.3]
+## [0.0.3+2]
 
 - No longer 3rd party dependency needed, also documentation added.
 - Action text is now customizable.

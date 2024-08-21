@@ -22,7 +22,7 @@ Add the dependency in `pubspec.yaml`
 
 ```yaml
 dependencies:
-  steel_alert: ^0.0.3+1
+  steel_alert: ^0.0.3+2
 ```
 
 ## Usage
@@ -40,7 +40,6 @@ After that you need to define navigator key.
 ```dart
 
 void main() {
-  setupLocator();
   runApp(
     MaterialApp(
       navigatorKey: Steel.navigationKey,
