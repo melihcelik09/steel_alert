@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:steel_alert/src/alerts/steel_alert.dart';
 import 'package:steel_alert/src/constants/steel_alert_type.dart';
 import 'package:steel_alert/src/constants/steel_colors.dart';
-import 'package:steel_alert/src/helpers/theme_extension.dart';
+import 'package:steel_alert/src/extensions/theme_extension.dart';
 
 class SteelAlertWidget extends StatelessWidget {
   final SteelAlertType type;
@@ -53,7 +53,7 @@ class SteelAlertWidget extends StatelessWidget {
             shadowColor: SteelColors.shadowColor,
           ),
           onPressed: () {
-            steelAlert.navigatorKey.currentState!.pop();
+            Steel.navigationKey.currentState!.pop();
           },
           child: Text(
             actionText ?? "OK",

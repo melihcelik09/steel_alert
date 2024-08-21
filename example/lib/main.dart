@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:steel_alert/steel_alert.dart';
 
 void main() {
-  setupLocator();
   runApp(
     MaterialApp(
-      navigatorKey: steelAlert.navigatorKey,
+      navigatorKey: Steel.navigationKey,
       home: const MyApp(),
       debugShowCheckedModeBanner: false,
     ),
@@ -25,7 +24,7 @@ class MyApp extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                steelAlert.success(
+                SteelAlert.success(
                   title: 'Success',
                   message: 'This is a success alert',
                 );
@@ -34,7 +33,7 @@ class MyApp extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                steelAlert.error(
+                SteelAlert.error(
                   title: 'Error',
                   message: 'This is an error alert',
                 );
@@ -43,7 +42,7 @@ class MyApp extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                steelAlert.warning(
+                SteelAlert.warning(
                   title: 'Warning',
                   message: 'This is a warning alert',
                 );

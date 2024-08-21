@@ -75,14 +75,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  get_it:
-    dependency: transitive
-    description:
-      name: get_it
-      sha256: d85128a5dae4ea777324730dc65edd9c9f43155c109d5cc0a69cab74139fbac1
-      url: "https://pub.dev"
-    source: hosted
-    version: "7.7.0"
   leak_tracker:
     dependency: transitive
     description:
@@ -171,11 +163,10 @@ packages:
   steel_alert:
     dependency: "direct main"
     description:
-      name: steel_alert
-      sha256: f8e72c7bd34cb6501d36b334d5296a5faf4d0ed8596a11c4b221b42e0ad0c1b3
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.0.1"
+      path: ".."
+      relative: true
+    source: path
+    version: "0.0.2"
   stream_channel:
     dependency: transitive
     description:
