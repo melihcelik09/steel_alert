@@ -22,7 +22,7 @@ Add the dependency in `pubspec.yaml`
 
 ```yaml
 dependencies:
-  steel_alert: ^0.0.1
+  steel_alert: ^0.0.3+1
 ```
 
 ## Usage
@@ -35,7 +35,7 @@ import 'package:steel_alert/steel_alert.dart';
 
 ```
 
-After that you need to call `setupLocator` method in main function. And you must be define navigator key.
+After that you need to define navigator key.
 
 ```dart
 
@@ -43,7 +43,7 @@ void main() {
   setupLocator();
   runApp(
     MaterialApp(
-      navigatorKey: steelAlert.navigatorKey,
+      navigatorKey: Steel.navigationKey,
       home: const MyApp(),
       debugShowCheckedModeBanner: false,
     ),
@@ -58,7 +58,7 @@ Here is how you can call dialog in your project.
 
 ElevatedButton(
               onPressed: () {
-                steelAlert.success(
+                SteelAlert.success(
                   title: 'Success',
                   message: 'This is a success alert',
                 );
@@ -70,9 +70,9 @@ ElevatedButton(
 
 We have 3 types for a now.
 
-- steelAlert.success()
-- steelAlert.error()
-- steelAlert.warning()
+- SteelAlert.success()
+- SteelAlert.error()
+- SteelAlert.warning()
 
 ## Feedback
 
